@@ -1,0 +1,1 @@
+<view><block wx:if="{{!$root.g0.length}}"><block><button open-type="getUserInfo" data-event-opts="{{[['getuserinfo',[['getuserinfo',['$event']]]]]}}" bindgetuserinfo="__e">用户授权</button></block></block><block wx:else><block><view>{{USERINFO.nickName}}</view><image src="{{USERINFO.avatarUrl}}" mode="aspectFill"></image></block></block></view>
